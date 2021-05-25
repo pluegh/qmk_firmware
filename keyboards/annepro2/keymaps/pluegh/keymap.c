@@ -15,11 +15,11 @@ enum anne_pro_layers {
 * ,-----------------------------------------------------------------------------------------.
 * |gresc|  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |    Bksp   |
 * |-----------------------------------------------------------------------------------------+
-* | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
+* |  Tab   |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
 * |-----------------------------------------------------------------------------------------+
-* | Caps    |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+* |  Ctrl   |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
 * |-----------------------------------------------------------------------------------------+
-* | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
+* |    Shift   |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |     Shift      |
 * |-----------------------------------------------------------------------------------------+
 * |FN1/grv|  Alt  |  L1   |               space             |  L2   |  Alt  |  FN2  | FN1   |
 * \-----------------------------------------------------------------------------------------/
@@ -29,20 +29,20 @@ enum anne_pro_layers {
 * |-----------------------------------------------------------------------------------------+
 * |        |     |     |     |     |     |     |     |     |     |     |     |     |        |
 * |-----------------------------------------------------------------------------------------+
-* |         |     |     |     |     |     |     |     |     |     |     |     |             |
+* |   Caps  |     |     |     |     |     |     |     |     |     |     |     |             |
 * |-----------------------------------------------------------------------------------------+
 * |            |     |     |     |     |     |     |     |     |     |     |       UP       |
 * |-----------------------------------------------------------------------------------------+
-* |       |       |       |                                 |       |  LEFT | DOWN  | RIGHT |
+* | grave |       |       |                                 |       |  LEFT | DOWN  | RIGHT |
 * \-----------------------------------------------------------------------------------------/
 */
  const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_BASE_LAYER] = KEYMAP( /* Base */
     KC_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS,
-    MT(MOD_LCTL,KC_ESC), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,
-    MT(MOD_LSFT,KC_GRAVE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, RSFT_T(KC_UP),
-    LT(_FN1_LAYER,KC_CAPS), KC_LALT, KC_LGUI, KC_SPC, KC_RGUI, MT(MOD_RALT,KC_LEFT), LT(_FN2_LAYER,KC_DOWN), LT(_FN1_LAYER,KC_RGHT)
+    MT(MOD_LCTL,KC_CAPS), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,
+    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, RSFT_T(KC_UP),
+    LT(_FN1_LAYER,KC_GRAVE), KC_LALT, KC_LGUI, KC_SPC, KC_RGUI, MT(MOD_RALT,KC_LEFT), LT(_FN2_LAYER,KC_DOWN), LT(_FN1_LAYER,KC_RGHT)
 ),
   /*
   * Layer _FN1_LAYER
